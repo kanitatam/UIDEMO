@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="software OOP">
+    <CLASSES>
+      <root url="jar://D:/software OOP/jfoenix-8.0.1.jar!/" />
+      <root url="jar://D:/software OOP/fontawesomefx-8.9.jar!/" />
+      <root url="file://D:/software OOP" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://D:/software OOP" recursive="false" />
+  </library>
+</component>
