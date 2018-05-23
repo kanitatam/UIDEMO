@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adminDashBoard.dashBoardController">
+   <children>
+      <Pane prefHeight="71.0" prefWidth="600.0" style="-fx-background-color: #ff8a80;">
+         <children>
+            <Label layoutX="33.0" layoutY="19.0" text="Welcome!!" textFill="#cd385d">
+               <font>
+                  <Font name="Britannic Bold" size="32.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutY="71.0" prefHeight="328.0" prefWidth="171.0" style="-fx-background-color: #ffcdd2;" styleClass="-fx-">
+         <children>
+            <VBox layoutX="16.0" layoutY="20.0" prefHeight="279.0" prefWidth="148.0">
+               <children>
+                  <JFXButton prefHeight="25.0" prefWidth="147.0" style="-fx-background-color: #ffff8d;" text="Add">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <FontAwesomeIconView glyphName="USER_PLUS" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton prefHeight="25.0" prefWidth="152.0" style="-fx-background-color: #ffff8d;" text="Edit">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <FontAwesomeIconView glyphName="EDIT" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #ffff8d;" text="Delete">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <FontAwesomeIconView glyphName="TIMES" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton prefHeight="35.0" prefWidth="148.0" style="-fx-background-color: #ff3d00;" text="Logout">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <FontAwesomeIconView glyphName="SIGN_OUT" />
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+      <TableView layoutX="192.0" layoutY="120.0" prefHeight="266.0" prefWidth="383.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="ID" />
+          <TableColumn prefWidth="75.0" text="Name" />
+            <TableColumn prefWidth="75.0" text="Position" />
+            <TableColumn prefWidth="75.0" text="Email" />
+            <TableColumn prefWidth="75.0" text="Salsry" />
+        </columns>
+      </TableView>
+      <JFXTextField layoutX="205.0" layoutY="74.0" prefHeight="25.0" prefWidth="180.0" />
+      <FontAwesomeIconView glyphName="SEARCH" layoutX="186.0" layoutY="97.0" />
+      <JFXButton layoutX="498.0" layoutY="79.0" prefHeight="34.0" prefWidth="77.0" style="-fx-background-color: #ffea00;" text="Load">
+         <graphic>
+            <FontAwesomeIconView glyphName="DOWNLOAD" />
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>
